@@ -1,0 +1,56 @@
+Q1:What is GIT?
+Ans:Git is a software that is used for Version Control. It is free and open source.Version Control is the management of changes to documents, computer programs, large websites and other collection of information.
+
+There are two types of VCS:
+
+1) Centralized Version Control System (CVCS)
+2) Distributed Version Control System (DVCS)
+
+Q2:What is the difference between GIT and SVN?
+Ans:Git and SVN are both software. Git is SCM, source code management , and a distributed revision control system. SVN is a revision control and software versioning system and SVN has a global revision number, the revision number is a source code’s snap shot; Git does not have this.
+
+Q3:Write a command to commit your work in Git?
+Ans:Git-commit - Record changes to the repository.
+COMMAND:
+git commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend]
+	   [--dry-run] [(-c | -C | --fixup | --squash) <commit>]
+	   [-F <file> | -m <msg>] [--reset-author] [--allow-empty]
+	   [--allow-empty-message] [--no-verify] [-e] [--author=<author>]
+	   [--date=<date>] [--cleanup=<mode>] [--[no-]status]
+	   [-i | -o] [-S[<keyid>]] [--] [<file>…?]
+
+Q4:Create a repository with your name with unique roll number in GitHub?
+Ans:
+
+
+
+
+
+
+
+
+Q5:What is “Staging Area” or “Index” in GIT?
+Ans:Before completing the commits, it can be formatted and reviewed in an intermediate area known as ‘Staging Area’ or ‘Index’.
+
+Q6:What are the advantages of using Git?
+Ans:One of the biggest advantages of Git is its branching capabilities. Unlike centralized version control systems, Git branches are cheap and easy to merge. This facilitates the feature branch workflow popular with many Git users. Feature branches provide an isolated environment for every change to your codebase.
+
+Q7:What is Git clone?
+Ans:The git clone command copies an existing Git repository. This is sort of like SVN checkout, except the “working copy” is a full-fledged Git repository—it has its own history, manages its own files, and is a completely isolated environment from the original repository.
+
+Q8:What is the command to delete branch?
+Ans:$ git push origin --delete <branch>  
+$ git push origin :<branch> 
+
+Q9:Explain the architectureof Git in your own words?
+Ans:
+
+
+
+
+
+Q10:How to resolve conflicts in Git?
+Ans:To resolve a merge conflict caused by competing line changes, you must choose which changes to incorporate from the different branches in a new commit.
+
+Q11:Name the different vendors that are working on VCS?
+Ans:
