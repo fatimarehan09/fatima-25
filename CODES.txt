@@ -1,0 +1,168 @@
+1ST CODE:
+
+#include<iostream>
+#include<conio.h>
+
+Using namespace std;
+
+void main(){
+	cout <<"NUMBER FROM 1 TO 100";
+cout << endl;
+	cout << endl;
+	int y=0;
+	while(y<100){
+	y++;
+	cout <<"\t"<< y;
+	
+	}
+	cout << endl;
+	cout << endl;
+	cout <<"PRIME NUMBERS";
+	cout << endl;
+	cout << endl;
+	for (int i=2; i<=100; i++){
+		for
+			(int j =2;j<=i;j++){
+			
+		if
+			(i%j == 0){
+				break;
+						
+			}else if(i == j+1){
+			cout <<"\t"<< i;
+				}
+		
+		} 
+	} 
+getch();
+}
+
+
+2ND CODE:
+
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+void main(){
+	int c;
+	int d;
+	cout <<"MATHEMATICS TABLES";
+	cout << endl;
+	cout << endl;
+		cout <<"ENTER A NUMBER TO GENERATE TO TABLE : ";
+	cin >> c;
+	cout << endl;
+	cout <<"to : ";
+	cin >> d;
+	cout << endl;
+	for
+		(int k = 1 ; k <=d; k++){
+			int ans;
+			ans = k*c;
+			cout  <<"\t\t\t"<< c <<" X "<< k <<" = "<< ans << endl;
+
+	
+	
+
+	}
+	
+getch();
+}
+
+
+3RD CODE:
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+void main(){
+	cout <<"NUMBER FROM 50 TO 5";
+	cout << endl;
+	cout << endl;
+	int y =51;
+	while(y > 5){
+	y--;
+	cout <<"\t"<< y;
+	}
+	cout << endl;
+	cout << endl;
+	cout <<"ODD NUMBERS";
+	cout << endl;
+	cout << endl;
+	int i =51;
+	while(i > 5){
+	i--;
+	if
+		(i%2 != 0){
+	cout <<"\t"<< i;
+	}
+	
+	}
+getch();
+}
+
+
+
+4TH CODE:
+
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+void main(){
+	cout <<"NUMBER FROM 1 TO 100";
+	cout << endl;
+	cout << endl;
+	for (int j=1; j <=100; ++j){
+		cout <<"    "<< j ;
+	}
+	cout << endl; 
+cout << endl;
+	cout <<"EVEN NUMBERS";
+	cout << endl;
+	cout << endl;
+	for (int j=1; j <=100; ++j){
+		if
+			(j%2==0){
+			cout<<"    "<< j ;
+		
+		}
+	}
+getch();
+}
+
+5TH CODE:
+
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+void main(){
+	cout <<"NUMBER FROM 50 TO 5";
+	cout << endl;
+	cout << endl;
+	int y =51;
+	while(y > 5){
+	y--;
+	cout <<"\t"<< y;
+	}
+	cout << endl;
+	cout << endl;
+	cout <<"EVEN NUMBERS";
+	cout << endl;
+	cout << endl;
+	int i =51;
+	while(i > 5){
+	i--;
+	if
+		(i%2 == 0){
+	cout << "\t"<< i;
+	}
+	
+	}
+getch();
