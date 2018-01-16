@@ -21,13 +21,7 @@ git commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend]
 
 Q4:Create a repository with your name with unique roll number in GitHub?
 Ans:
-
-
-
-
-
-
-
+https://github.com/fatimarehan09/fatima-25.git
 
 Q5:What is “Staging Area” or “Index” in GIT?
 Ans:Before completing the commits, it can be formatted and reviewed in an intermediate area known as ‘Staging Area’ or ‘Index’.
@@ -54,3 +48,4 @@ Ans:To resolve a merge conflict caused by competing line changes, you must choos
 
 Q11:Name the different vendors that are working on VCS?
 Ans:
+Git up , bit bucket
