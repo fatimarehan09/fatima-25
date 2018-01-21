@@ -1,0 +1,85 @@
+1st program...
+int number1, number2, sum;
+            string num1, num2;
+            Console.WriteLine("enter two number:");
+            num1 = Console.ReadLine();
+            number1 = Int32.Parse(num1);
+            num2 = Console.ReadLine();
+            number2 = Int32.Parse(num2);
+            sum = number1 + number2;
+            Console.WriteLine("sum of your number are:{0}", sum);
+            Console.ReadKey();
+2nd program....
+int number;
+            string num;
+            Console.WriteLine("enter any number to check even or odd:");
+            num = Console.ReadLine(); number = Int32.Parse(num);
+            if (number % 2 == 0)
+            {
+                Console.WriteLine("your number is even");
+            }
+            else
+            {
+                Console.WriteLine("your num is odd");
+                Console.ReadKey();
+3rd program....
+int a, b;
+            string num1, num2;
+            Console.WriteLine("enter two num to swap:");
+            num1 = Console.ReadLine();
+            a = Int32.Parse(num1);
+            num2 = Console.ReadLine();
+            b = Int32.Parse(num2);
+            a = a + b;
+            b = a - b;
+            a = a - b;
+            Console.WriteLine("after swaping number 1is{0}", a);
+            Console.WriteLine("after swaping number 2 is {0}", b);
+            Console.ReadKey();
+        4th program...
+int number, fac = 1;
+            string num;
+            Console.WriteLine("enter any num to check its factorial :");
+            num = Console.ReadLine();
+            number = Int32.Parse(num);
+            for (int i = 1; i <= number; i++)
+            {
+                fac = fac * i;
+            }
+            Console.WriteLine("answer is {0}", fac);
+            Console.ReadKey();
+
+
+5th program...
+
+int rad,dia,cir,area;
+string r;
+Console.WriteLine("enter radius to find diameter circumference and area of a circle :");
+r=Console.ReadLine ();
+rad=Int32.Parse(r);
+dia=2*rad;
+cir=2*dia*rad;
+Console.wrieLine("diameer of circle is:{0}",dia);
+Console.wrieLine("circumference of circle is:{0}",cir);
+Console.writeLine("area of circle is:{0}",area);
+Console.ReadKey();
+
+6th program....
+
+int number1,number2,sum,sub,mul,div;
+string num1,num2;
+Console.WriteLine("enter two num check their addition multiplication subtraction and division");
+num1=Console.ReadLine();
+number1=Int32.Parse(num1);
+num2=Console.ReadLine();
+number2=Int32.Parse(num2);
+sum=number1+number2;
+Console.WriteLine("sum of your numbers are:{0}",sum);
+sub=number1-number2;
+Console.WriteLine("sub of your numbers are:{0}",sub);
+mul=number1*number2;
+Console.WriteLine("mul of your numbers are:{0}",mul);
+div=number1/number2;
+Console.WriteLine("div of your numbers are:{0}",div);
+Console.ReadKey();
+
