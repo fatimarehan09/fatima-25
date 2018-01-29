@@ -1,0 +1,279 @@
+TASK 01:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication40
+{
+    class Program
+    {
+        
+
+public class Book
+{
+    public string Title;
+    public string Author;
+    public int YearPublished;
+    public int NumberOfPages;
+    public char CoverType;
+}
+
+public class Exercise
+{
+    static void Main()
+    {
+        var First = new Book();
+
+        Console.Write("enter Title:  ");
+        First.Title = Console.ReadLine();
+        Console.Write("enter Author:  ");
+        First.Author = Console.ReadLine();
+        Console.Write(" enter year:   ");
+        First.YearPublished = int.Parse(Console.ReadLine());
+        Console.Write("Pages:  ");
+        First.NumberOfPages = int.Parse(Console.ReadLine());
+        Console.Write("enter Cover:  ");
+        First.CoverType = char.Parse(Console.ReadLine());
+        Console.WriteLine("\nBook Characteristics");
+
+        Console.Write("Title:  ");
+        Console.WriteLine(First.Title);
+        Console.Write("Author: ");
+        Console.WriteLine(First.Author);
+        Console.Write("Year:   ");
+        Console.WriteLine(First.YearPublished);
+        Console.Write("Pages:  ");
+        Console.WriteLine(First.NumberOfPages);
+        Console.Write("Cover:  ");
+        Console.WriteLine(First.CoverType);
+        Console.ReadKey();   
+ }
+
+TASK 02:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double rl, phy, che, ca, total;
+            double per;
+            string nm, div;
+            Console.Write("\n\n");
+            Console.Write("Calculate the total, percentage and division to take marks of three subjects:\n");
+            Console.Write("-------------------------------------------------------------------------------");
+            Console.Write("\n\n");
+            Console.Write("Input the Roll Number of the student :");
+            rl = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input the Name of the Student :");
+            nm = Console.ReadLine();
+            Console.Write("Input the marks of Physics : ");
+            phy = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input the marks of Chemistry : ");
+            che = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input the marks of Computer Application : ");
+            ca = Convert.ToInt32(Console.ReadLine());
+            total = phy + che + ca;
+            per = total / 3.0;
+            if (per >= 60)
+                div = "First";
+            else
+                if (per < 60 && per >= 48)
+                    div = "Second";
+                else
+                    if (per < 48 && per >= 36)
+                        div = "Pass";
+                    else
+                        div = "Fail";
+            Console.Write("\nRoll No : {0}\nName of Student : {1}\n", rl, nm);
+            Console.Write("Marks in Physics : {0}\nMarks in Chemistry : {1}\nMarks in Computer Application : {2}\n", phy, che, ca);
+            Console.Write("Total Marks = {0}\nPercentage = {1}\nDivision = {2}\n", total, per, div);
+            Console.ReadKey();
+        }
+    }
+
+}
+
+TASK 03:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace find_vowel
+{
+    class find_vowel
+    {
+        private string name;
+        private int total = 0;
+        public void enter_name()
+        {
+            Console.WriteLine("Enter your name : ");
+            name = Console.ReadLine();
+        }
+        public int count_vowel()
+        {
+            char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
+
+            total = name.Count(x => vowels.Contains(x));
+
+            Console.WriteLine("Your total number of vowels is: {0}", total);
+
+            return 0;
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            find_vowel obj = new find_vowel();
+            obj.enter_name();
+            obj.count_vowel();
+            Console.ReadLine();
+        }
+    }
+}
+
+
+TASK 04:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace shaps
+{
+    class rectangle
+    {
+        private double lenght, width;
+        public void inputs()
+        {
+            Console.WriteLine("Enter length = ");
+            lenght = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter width = ");
+            width = Convert.ToDouble(Console.ReadLine());
+        }
+        public void cal_perimeter()
+        {
+            double result = 2 * (lenght + width);
+            Console.WriteLine("Perimeter of the rectangle = {0}\n",result);
+        }
+        public void cal_area()
+        {
+            Console.WriteLine("Area of the rectangle = {0}\n",lenght*width);
+        }
+        public void cal_square()
+        {
+            if (lenght == width)
+            {
+                Console.WriteLine("it is an square ?? {0}\n",true);
+            }
+            else
+            {
+                Console.WriteLine("it is an square ?? {0}\n",false);
+            }
+            
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            rectangle obj = new rectangle();
+            obj.inputs();
+            obj.cal_perimeter();
+            obj.cal_area();
+            obj.cal_square();
+            Console.ReadLine();
+        }
+    }
+}
+
+TASK 05:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace banking
+{
+    public class bankingsystem
+    {
+        private int money;
+        private double total;
+        public void withdraw()
+        {
+            Console.WriteLine("you have 25,000 in your account.");
+            Console.WriteLine("enter 5 for 5,000");
+            Console.WriteLine("enter 10 for 10,000");
+            Console.WriteLine("enter 15 for 15,000");
+            Console.WriteLine("enter 20 for 20,000");
+            Console.WriteLine("enter 25 for 25,000");
+            Console.Write("enter from given cetegries : ");
+            money = Int32.Parse(Console.ReadLine());
+            if (money == 5)
+                Console.WriteLine("thanks you! now you have 20,000 in your account.");
+            else if (money == 10)
+                Console.WriteLine("thanks you! now you have 15,000 in your account.");
+            else if (money == 15)
+                Console.WriteLine("thanks you! now you have 10,000 in your account.");
+            else if (money == 20)
+                Console.WriteLine("thanks you! now you have 5,000 in your account.");
+            else if (money == 25)
+                Console.WriteLine("thanks you! now please recharge your account.");
+            else
+                Console.WriteLine("please enter value from given categrious.");
+        }
+        public void fastcash()
+        {
+            Console.WriteLine("Rember!! you have only 25,000 in your account");
+            Console.Write("enter money : ");
+            money = Int32.Parse(Console.ReadLine());
+            if (money < 25000)
+            {
+                total = 25000 - money;
+                Console.WriteLine("thank your!! your entered money of {0} now your have {1} in your account", money, total);
+            }
+            else
+                Console.WriteLine("you have only 25,000 in your account");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            start:
+            char ch;
+            bankingsystem obj = new bankingsystem();
+            Console.WriteLine("enter w for with withdrawal.");
+            Console.WriteLine("enter f for with fast cash.");
+            ch = char.Parse(Console.ReadLine());
+            if (ch == 'w')
+            {
+                obj.withdraw();
+            }
+            else if (ch == 'f')
+            {
+                obj.fastcash();
+            }
+            else
+            {
+                Console.WriteLine("please salect from given categries.");
+            }
+            goto start;
+            Console.ReadLine();
+        }
+    }
+}
